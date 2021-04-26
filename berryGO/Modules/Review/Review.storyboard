@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Review View Controller-->
+        <scene sceneID="blh-GG-sA2">
+            <objects>
+                <viewController storyboardIdentifier="ReviewViewController" id="kFJ-an-QDE" customClass="ReviewViewController" customModule="berryGO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dhN-zl-30z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta7-uK-Gv7">
+                                <rect key="frame" x="323" y="20" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="8c6-V5-gNV"/>
+                                    <constraint firstAttribute="height" constant="36" id="DIc-Qm-iQX"/>
+                                </constraints>
+                                <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="kFJ-an-QDE" eventType="touchUpInside" id="1Ed-Fp-RZO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVV-fq-XvP">
+                                <rect key="frame" x="282" y="609" width="68" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="XK3-IJ-zhs"/>
+                                </constraints>
+                                <state key="normal" image="post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="post_enabled"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="kFJ-an-QDE" eventType="touchUpInside" id="c7C-gg-o5r"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6WA-Wa-9gc">
+                                <rect key="frame" x="0.0" y="56" width="375" height="538"/>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dNs-Zi-s28">
+                                <rect key="frame" x="20" y="604" width="252" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="tua-6K-jhC"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TDC-Z5-8kK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DvV-an-4WG" firstAttribute="trailing" secondItem="Ta7-uK-Gv7" secondAttribute="trailing" constant="16" id="ALJ-gC-DOR"/>
+                            <constraint firstItem="yVV-fq-XvP" firstAttribute="leading" secondItem="dNs-Zi-s28" secondAttribute="trailing" constant="10" id="BIi-ZE-OYQ"/>
+                            <constraint firstItem="yVV-fq-XvP" firstAttribute="top" secondItem="6WA-Wa-9gc" secondAttribute="bottom" constant="15" id="BW6-pl-NtE"/>
+                            <constraint firstItem="DvV-an-4WG" firstAttribute="trailing" secondItem="yVV-fq-XvP" secondAttribute="trailing" constant="25" id="KQT-MD-btj"/>
+                            <constraint firstItem="Ta7-uK-Gv7" firstAttribute="top" secondItem="DvV-an-4WG" secondAttribute="top" constant="20" id="NZH-KK-Dhe"/>
+                            <constraint firstItem="dNs-Zi-s28" firstAttribute="leading" secondItem="DvV-an-4WG" secondAttribute="leading" constant="20" id="SUx-lJ-bkl"/>
+                            <constraint firstItem="6WA-Wa-9gc" firstAttribute="top" secondItem="Ta7-uK-Gv7" secondAttribute="bottom" id="X2P-S1-KeW"/>
+                            <constraint firstItem="dNs-Zi-s28" firstAttribute="centerY" secondItem="yVV-fq-XvP" secondAttribute="centerY" id="a1P-8R-ppg"/>
+                            <constraint firstItem="DvV-an-4WG" firstAttribute="trailing" secondItem="6WA-Wa-9gc" secondAttribute="trailing" id="cgP-Mc-WFZ"/>
+                            <constraint firstItem="6WA-Wa-9gc" firstAttribute="leading" secondItem="DvV-an-4WG" secondAttribute="leading" id="e8h-Ub-Th5"/>
+                            <constraint firstItem="DvV-an-4WG" firstAttribute="bottom" secondItem="yVV-fq-XvP" secondAttribute="bottom" constant="20" id="wCx-ig-KF6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DvV-an-4WG"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="yVV-fq-XvP" id="Bjm-wf-uGe"/>
+                        <outlet property="photocollectionView" destination="dNs-Zi-s28" id="7ii-Vc-mPU"/>
+                        <outlet property="tableView" destination="6WA-Wa-9gc" id="Oji-dp-dET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ald-fA-4zZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="closeButton" width="108" height="108"/>
+        <image name="post" width="68" height="38"/>
+        <image name="post_enabled" width="68" height="38"/>
+    </resources>
+</document>

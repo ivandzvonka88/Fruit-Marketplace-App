@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="23" id="KGk-i7-Jjw" customClass="SelectStoreTableViewCell" customModule="berryGO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-l2-wUf">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
+                        <subviews>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHw-Fx-J2n">
+                                <rect key="frame" x="0.0" y="59" width="372" height="1"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="o07-bV-nQb"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectstore" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-l5-qCy">
+                                <rect key="frame" x="32" y="22" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="PUx-EC-GoD"/>
+                                    <constraint firstAttribute="width" constant="16" id="wah-Rx-BY5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahD-Y1-LP1">
+                                <rect key="frame" x="56" y="13.5" width="108" height="33"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <state key="normal" title="Select a store">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.1137254902" blue="0.1137254902" alpha="0.60450556509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectstoreTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qab-Vs-Fv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNd-OT-0YD">
+                                <rect key="frame" x="330" y="19" width="10" height="22"/>
+                                <state key="normal" image="cameraroll">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.1137254902" blue="0.1137254902" alpha="0.60450556509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VSa-a8-dTa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SNd-OT-0YD" secondAttribute="trailing" constant="32" id="98q-PJ-dcu"/>
+                            <constraint firstItem="SNd-OT-0YD" firstAttribute="centerY" secondItem="VIP-l2-wUf" secondAttribute="centerY" id="9Z7-hF-PhL"/>
+                            <constraint firstItem="FHw-Fx-J2n" firstAttribute="leading" secondItem="VIP-l2-wUf" secondAttribute="leading" id="LLF-lH-hLk"/>
+                            <constraint firstItem="mRj-l5-qCy" firstAttribute="centerY" secondItem="VIP-l2-wUf" secondAttribute="centerY" id="QKN-y6-qUt"/>
+                            <constraint firstItem="ahD-Y1-LP1" firstAttribute="leading" secondItem="mRj-l5-qCy" secondAttribute="trailing" constant="8" id="XSn-04-QzE"/>
+                            <constraint firstAttribute="trailing" secondItem="FHw-Fx-J2n" secondAttribute="trailing" id="bW0-aL-c1k"/>
+                            <constraint firstAttribute="bottom" secondItem="FHw-Fx-J2n" secondAttribute="bottom" id="prj-F3-N3K"/>
+                            <constraint firstItem="mRj-l5-qCy" firstAttribute="leading" secondItem="VIP-l2-wUf" secondAttribute="leading" constant="32" id="te1-0a-gPN"/>
+                            <constraint firstItem="ahD-Y1-LP1" firstAttribute="centerY" secondItem="VIP-l2-wUf" secondAttribute="centerY" id="vxF-tI-h17"/>
+                            <constraint firstAttribute="height" constant="60" id="zZk-vz-aMF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VIP-l2-wUf" secondAttribute="trailing" id="34j-Is-DTh"/>
+                    <constraint firstAttribute="bottom" secondItem="VIP-l2-wUf" secondAttribute="bottom" id="kpT-1i-5oj"/>
+                    <constraint firstItem="VIP-l2-wUf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yCJ-lw-CJk"/>
+                    <constraint firstItem="VIP-l2-wUf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="z0O-O5-yxd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="moreButton" destination="SNd-OT-0YD" id="RPJ-Ph-uIT"/>
+                <outlet property="selectstoreButton" destination="ahD-Y1-LP1" id="Kz7-w8-O7c"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="101.11607142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cameraroll" width="10" height="5"/>
+        <image name="selectstore" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="256" id="KGk-i7-Jjw" customClass="ReviewTableViewCell" customModule="berryGO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-4M-NKp">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="188"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Metcalfe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yni-ad-buB">
+                                <rect key="frame" x="53" y="15" width="87" height="17"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.1137254902" blue="0.1137254902" alpha="0.79770440927945208" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="24 Aug 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ah-Qx-V5h">
+                                <rect key="frame" x="298" y="33" width="69" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.1137254902" blue="0.1137254902" alpha="0.60450556509999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSl-6j-uKZ" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="302" y="17" width="65" height="13"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="Hgq-db-e4g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnL-PO-VPk">
+                                <rect key="frame" x="16" y="58" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="euH-wv-r5G"/>
+                                </constraints>
+                                <string key="text">There are fruit and veg shops and there are fruit and veg shops. this is a place to go, seriously they take pride in there shops produce that they sell</string>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.1137254902" blue="0.1137254902" alpha="0.79387842468904113" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="euH-wv-r5G"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="2 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lp-TM-rSJ">
+                                <rect key="frame" x="53" y="33" width="56" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.1137254902" blue="0.1137254902" alpha="0.60450556510136988" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_example" translatesAutoresizingMaskIntoConstraints="NO" id="HhA-j7-oUg">
+                                <rect key="frame" x="15" y="17" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="PCI-bD-Zm1"/>
+                                    <constraint firstAttribute="height" constant="28" id="Z1d-Wt-pAV"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-Qo-NjT">
+                                <rect key="frame" x="0.0" y="116" width="387" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="lu7-y4-jnw"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e4J-VY-ALJ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HhA-j7-oUg" firstAttribute="leading" secondItem="Gdi-4M-NKp" secondAttribute="leading" constant="15" id="16r-ks-HqD"/>
+                            <constraint firstAttribute="trailing" secondItem="SSl-6j-uKZ" secondAttribute="trailing" constant="20" id="Bvk-58-LaG"/>
+                            <constraint firstAttribute="trailing" secondItem="gl5-Qo-NjT" secondAttribute="trailing" id="CI9-Hi-yuY"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ah-Qx-V5h" secondAttribute="trailing" constant="20" id="CeJ-Fb-cal"/>
+                            <constraint firstItem="SSl-6j-uKZ" firstAttribute="top" secondItem="Gdi-4M-NKp" secondAttribute="top" constant="15" id="Dk4-8c-eMn"/>
+                            <constraint firstItem="HhA-j7-oUg" firstAttribute="top" secondItem="Gdi-4M-NKp" secondAttribute="top" constant="17" id="FH4-I4-vS6"/>
+                            <constraint firstAttribute="bottom" secondItem="GnL-PO-VPk" secondAttribute="bottom" id="Gw8-RD-0aq"/>
+                            <constraint firstItem="3Lp-TM-rSJ" firstAttribute="top" secondItem="yni-ad-buB" secondAttribute="bottom" constant="1" id="JTp-jW-OIm"/>
+                            <constraint firstItem="GnL-PO-VPk" firstAttribute="leading" secondItem="Gdi-4M-NKp" secondAttribute="leading" constant="16" id="NnV-4S-Qoh"/>
+                            <constraint firstItem="3Lp-TM-rSJ" firstAttribute="leading" secondItem="HhA-j7-oUg" secondAttribute="trailing" constant="10" id="PL4-kd-zBi"/>
+                            <constraint firstItem="yni-ad-buB" firstAttribute="leading" secondItem="HhA-j7-oUg" secondAttribute="trailing" constant="10" id="Stu-Tx-O3m"/>
+                            <constraint firstAttribute="bottom" secondItem="GnL-PO-VPk" secondAttribute="bottom" constant="80" id="U8q-jE-TTC"/>
+                            <constraint firstItem="yni-ad-buB" firstAttribute="top" secondItem="Gdi-4M-NKp" secondAttribute="top" constant="15" id="Vq1-01-z2T"/>
+                            <constraint firstItem="SSl-6j-uKZ" firstAttribute="centerY" secondItem="yni-ad-buB" secondAttribute="centerY" id="cIY-sO-Pph"/>
+                            <constraint firstItem="GnL-PO-VPk" firstAttribute="top" secondItem="3Lp-TM-rSJ" secondAttribute="bottom" constant="10.5" id="dtT-Nj-0oL"/>
+                            <constraint firstItem="gl5-Qo-NjT" firstAttribute="leading" secondItem="Gdi-4M-NKp" secondAttribute="leading" id="glu-Ab-YSe"/>
+                            <constraint firstItem="gl5-Qo-NjT" firstAttribute="top" secondItem="GnL-PO-VPk" secondAttribute="bottom" constant="8" id="l2h-wb-Se3"/>
+                            <constraint firstAttribute="trailing" secondItem="GnL-PO-VPk" secondAttribute="trailing" constant="16" id="u1P-1q-4kf"/>
+                            <constraint firstItem="6Ah-Qx-V5h" firstAttribute="centerY" secondItem="3Lp-TM-rSJ" secondAttribute="centerY" id="z0L-tM-qBE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gw8-RD-0aq"/>
+                                <exclude reference="Dk4-8c-eMn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Gdi-4M-NKp" secondAttribute="trailing" id="2iY-BF-kBv"/>
+                    <constraint firstItem="Gdi-4M-NKp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kg5-fr-qkC"/>
+                    <constraint firstItem="Gdi-4M-NKp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NbA-mY-PyZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Gdi-4M-NKp" secondAttribute="bottom" id="x2P-Vf-S6l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="6Ah-Qx-V5h" id="DGH-5C-wsK"/>
+                <outlet property="photocollectionView" destination="gl5-Qo-NjT" id="wnm-sE-kdY"/>
+                <outlet property="ratingView" destination="SSl-6j-uKZ" id="qfh-7N-sgP"/>
+                <outlet property="reviewLabel" destination="GnL-PO-VPk" id="uzC-Zk-8JC"/>
+                <outlet property="userNameLabel" destination="yni-ad-buB" id="mt0-n2-hL5"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="217.63392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo_example" width="38" height="38"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddCollectionViewCell" customModule="berryGO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WK5-0K-bgt">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="g2C-dI-9ZL">
+                                <rect key="frame" x="0.0" y="0.0" width="126" height="72"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="paleOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="g2C-dI-9ZL" firstAttribute="centerX" secondItem="WK5-0K-bgt" secondAttribute="centerX" id="kdi-d3-2ys"/>
+                            <constraint firstItem="g2C-dI-9ZL" firstAttribute="centerY" secondItem="WK5-0K-bgt" secondAttribute="centerY" id="q5U-4g-MKU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WK5-0K-bgt" secondAttribute="trailing" id="AvE-C9-uQl"/>
+                <constraint firstItem="WK5-0K-bgt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C7d-D0-FLu"/>
+                <constraint firstItem="WK5-0K-bgt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KyL-k4-mDH"/>
+                <constraint firstAttribute="bottom" secondItem="WK5-0K-bgt" secondAttribute="bottom" id="mh8-JF-znB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="43" height="94"/>
+            <connections>
+                <outlet property="addphoto" destination="g2C-dI-9ZL" id="Bjn-kN-TuF"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="136.60714285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addPhoto" width="126" height="72"/>
+        <namedColor name="paleOrangeColor">
+            <color red="0.96470588235294119" green="0.94901960784313721" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
